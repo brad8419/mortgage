@@ -1,0 +1,70 @@
+create table users
+(person_id number(10) primary key,
+username varchar2(20) not null,
+password varchar2(50) not null,
+email varchar2(30) not null,
+authority number(1) not null);
+
+create sequence person_count;
+
+insert into users values (person_count.nextval, 'admin', 'admin', 'stevenwumo@gmail.com', 0);
+
+
+create table interest
+(state_id number(2) primary key,
+state varchar2(2) not null,
+interest numeric(5,2) not null);
+
+create sequence state_count;
+
+insert into interest values (state_count.nextval, 'AL', 6);
+insert into interest values (state_count.nextval, 'AK', 10.5);
+insert into interest values (state_count.nextval, 'AZ', 10);
+insert into interest values (state_count.nextval, 'AR', 6);
+insert into interest values (state_count.nextval, 'CA', 10);
+insert into interest values (state_count.nextval, 'CO', 8);
+insert into interest values (state_count.nextval, 'CT', 8);
+insert into interest values (state_count.nextval, 'DE', 5);
+insert into interest values (state_count.nextval, 'FL', 12);
+insert into interest values (state_count.nextval, 'GA', 7);
+insert into interest values (state_count.nextval, 'HI', 10);
+insert into interest values (state_count.nextval, 'ID', 12);
+insert into interest values (state_count.nextval, 'IL', 5);
+insert into interest values (state_count.nextval, 'IN', 10);
+insert into interest values (state_count.nextval, 'IA', 10);
+insert into interest values (state_count.nextval, 'KS', 10);
+insert into interest values (state_count.nextval, 'KY', 8);
+insert into interest values (state_count.nextval, 'LA', 10.5);
+insert into interest values (state_count.nextval, 'ME', 6);
+insert into interest values (state_count.nextval, 'MD', 6);
+insert into interest values (state_count.nextval, 'MA', 6);
+insert into interest values (state_count.nextval, 'MI', 5);
+insert into interest values (state_count.nextval, 'MN', 6);
+insert into interest values (state_count.nextval, 'MS', 9);
+insert into interest values (state_count.nextval, 'MO', 9);
+insert into interest values (state_count.nextval, 'MT', 10);
+insert into interest values (state_count.nextval, 'NE', 6);
+insert into interest values (state_count.nextval, 'NV', 12);
+insert into interest values (state_count.nextval, 'NH', 10);
+insert into interest values (state_count.nextval, 'NJ', 6);
+insert into interest values (state_count.nextval, 'NM', 15);
+insert into interest values (state_count.nextval, 'NY', 9);
+insert into interest values (state_count.nextval, 'NC', 8);
+insert into interest values (state_count.nextval, 'ND', 6);
+insert into interest values (state_count.nextval, 'OH', 6);
+insert into interest values (state_count.nextval, 'OK', 6);
+insert into interest values (state_count.nextval, 'OR', 9);
+insert into interest values (state_count.nextval, 'PA', 6);
+insert into interest values (state_count.nextval, 'RI', 12);
+insert into interest values (state_count.nextval, 'SC', 8.75);
+insert into interest values (state_count.nextval, 'SD', 15);
+insert into interest values (state_count.nextval, 'TN', 10);
+insert into interest values (state_count.nextval, 'TX', 6);
+insert into interest values (state_count.nextval, 'UT', 10);
+insert into interest values (state_count.nextval, 'VT', 12);
+insert into interest values (state_count.nextval, 'VA', 8);
+insert into interest values (state_count.nextval, 'WA', 12);
+insert into interest values (state_count.nextval, 'WV', 6);
+insert into interest values (state_count.nextval, 'WI', 5);
+insert into interest values (state_count.nextval, 'WY', 10);
+
