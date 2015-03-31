@@ -13,58 +13,63 @@ insert into users values (person_count.nextval, 'admin', 'admin', 'stevenwumo@gm
 create table interest
 (state_id number(2) primary key,
 state varchar2(2) not null,
-interest numeric(5,2) not null);
+fix_30 numeric(5,2) not null,
+fix_20 numeric(5,2) not null,
+fix_15 numeric(5,2) not null,
+arm_5 numeric(5,2) not null,
+arm_7 numeric(5,2) not null,
+arm_10 numeric(5,2) not null);
 
 create sequence state_count;
 
-insert into interest values (state_count.nextval, 'AL', 6);
-insert into interest values (state_count.nextval, 'AK', 10.5);
-insert into interest values (state_count.nextval, 'AZ', 10);
-insert into interest values (state_count.nextval, 'AR', 6);
-insert into interest values (state_count.nextval, 'CA', 10);
-insert into interest values (state_count.nextval, 'CO', 8);
-insert into interest values (state_count.nextval, 'CT', 8);
-insert into interest values (state_count.nextval, 'DE', 5);
-insert into interest values (state_count.nextval, 'FL', 12);
-insert into interest values (state_count.nextval, 'GA', 7);
-insert into interest values (state_count.nextval, 'HI', 10);
-insert into interest values (state_count.nextval, 'ID', 12);
-insert into interest values (state_count.nextval, 'IL', 5);
-insert into interest values (state_count.nextval, 'IN', 10);
-insert into interest values (state_count.nextval, 'IA', 10);
-insert into interest values (state_count.nextval, 'KS', 10);
-insert into interest values (state_count.nextval, 'KY', 8);
-insert into interest values (state_count.nextval, 'LA', 10.5);
-insert into interest values (state_count.nextval, 'ME', 6);
-insert into interest values (state_count.nextval, 'MD', 6);
-insert into interest values (state_count.nextval, 'MA', 6);
-insert into interest values (state_count.nextval, 'MI', 5);
-insert into interest values (state_count.nextval, 'MN', 6);
-insert into interest values (state_count.nextval, 'MS', 9);
-insert into interest values (state_count.nextval, 'MO', 9);
-insert into interest values (state_count.nextval, 'MT', 10);
-insert into interest values (state_count.nextval, 'NE', 6);
-insert into interest values (state_count.nextval, 'NV', 12);
-insert into interest values (state_count.nextval, 'NH', 10);
-insert into interest values (state_count.nextval, 'NJ', 6);
-insert into interest values (state_count.nextval, 'NM', 15);
-insert into interest values (state_count.nextval, 'NY', 9);
-insert into interest values (state_count.nextval, 'NC', 8);
-insert into interest values (state_count.nextval, 'ND', 6);
-insert into interest values (state_count.nextval, 'OH', 6);
-insert into interest values (state_count.nextval, 'OK', 6);
-insert into interest values (state_count.nextval, 'OR', 9);
-insert into interest values (state_count.nextval, 'PA', 6);
-insert into interest values (state_count.nextval, 'RI', 12);
-insert into interest values (state_count.nextval, 'SC', 8.75);
-insert into interest values (state_count.nextval, 'SD', 15);
-insert into interest values (state_count.nextval, 'TN', 10);
-insert into interest values (state_count.nextval, 'TX', 6);
-insert into interest values (state_count.nextval, 'UT', 10);
-insert into interest values (state_count.nextval, 'VT', 12);
-insert into interest values (state_count.nextval, 'VA', 8);
-insert into interest values (state_count.nextval, 'WA', 12);
-insert into interest values (state_count.nextval, 'WV', 6);
-insert into interest values (state_count.nextval, 'WI', 5);
-insert into interest values (state_count.nextval, 'WY', 10);
+insert into interest values (state_count.nextval, 'AL', 4.51, 3.763, 3.277, 2.482, 2.911, 3.269);
+insert into interest values (state_count.nextval, 'AK', 4.49, 3.724, 3.175, 2.334, 2.958, 3.418);
+insert into interest values (state_count.nextval, 'AZ', 4.63, 3.835, 3.304, 2.476, 3.007, 3.538);
+insert into interest values (state_count.nextval, 'AR', 4.57, 3.768, 3.325, 2.313, 2.832, 3.458);
+insert into interest values (state_count.nextval, 'CA', 4.54, 3.771, 3.325, 2.37, 2.839, 3.284);
+insert into interest values (state_count.nextval, 'CO', 4.67, 3.895, 3.391, 2.494, 2.874, 3.354);
+insert into interest values (state_count.nextval, 'CT', 4.51, 3.807, 3.221, 2.485, 2.785, 3.192);
+insert into interest values (state_count.nextval, 'DE', 4.52, 3.799, 3.255, 2.295, 2.83, 3.24);
+insert into interest values (state_count.nextval, 'FL', 4.59, 3.704, 3.384, 2.378, 2.893, 3.337);
+insert into interest values (state_count.nextval, 'GA', 4.52, 3.72, 3.312, 2.367, 2.92, 3.302);
+insert into interest values (state_count.nextval, 'HI', 4.58, 3.69, 3.304, 2.477, 3.046, 3.396);
+insert into interest values (state_count.nextval, 'ID', 4.67, 3.886, 3.375, 2.432, 2.832, 3.558);
+insert into interest values (state_count.nextval, 'IL', 4.69, 3.782, 3.432, 2.348, 2.827, 3.512);
+insert into interest values (state_count.nextval, 'IN', 4.97, 4.018, 3.652, 2.627, 3.098, 3.48);
+insert into interest values (state_count.nextval, 'IA', 4.62, 3.808, 3.301, 2.407, 3.041, 3.43);
+insert into interest values (state_count.nextval, 'KS', 4.28, 3.623, 3.133, 2.24, 2.862, 3.151);
+insert into interest values (state_count.nextval, 'KY', 4.53, 3.678, 3.26, 2.37, 2.843, 3.326);
+insert into interest values (state_count.nextval, 'LA', 4.46, 3.662, 3.257, 2.468, 2.738, 3.36);
+insert into interest values (state_count.nextval, 'ME', 4.51, 3.666, 3.348, 2.512, 2.824, 3.412);
+insert into interest values (state_count.nextval, 'MD', 4.55, 3.806, 3.334, 2.431, 2.929, 3.444);
+insert into interest values (state_count.nextval, 'MA', 4.44, 3.555, 3.222, 2.234, 2.957, 3.166);
+insert into interest values (state_count.nextval, 'MI', 4.51, 3.785, 3.314, 2.293, 2.727, 3.349);
+insert into interest values (state_count.nextval, 'MN', 4.45, 3.67, 3.192, 2.5, 2.831, 3.351);
+insert into interest values (state_count.nextval, 'MS', 4.57, 3.661, 3.313, 2.579, 2.826, 3.216);
+insert into interest values (state_count.nextval, 'MO', 4.55, 3.659, 3.259, 2.406, 2.95, 3.282);
+insert into interest values (state_count.nextval, 'MT', 4.55, 3.819, 3.194, 2.308, 2.964, 3.344);
+insert into interest values (state_count.nextval, 'NE', 4.62, 3.719, 3.309, 2.387, 2.894, 3.322);
+insert into interest values (state_count.nextval, 'NV', 4.75, 3.954, 3.41, 2.533, 2.901, 3.374);
+insert into interest values (state_count.nextval, 'NH', 3.96, 3.322, 2.935, 2.201, 2.65, 2.893);
+insert into interest values (state_count.nextval, 'NJ', 4.52, 3.798, 3.208, 2.437, 2.731, 3.348);
+insert into interest values (state_count.nextval, 'NM', 4.59, 3.766, 3.246, 2.337, 2.763, 3.237);
+insert into interest values (state_count.nextval, 'NY', 4.55, 3.794, 3.245, 2.37, 2.875, 3.44);
+insert into interest values (state_count.nextval, 'NC', 4.49, 3.756, 3.296, 2.35, 2.81, 3.345);
+insert into interest values (state_count.nextval, 'ND', 4.29, 3.505, 3.134, 2.25, 2.835, 3.104);
+insert into interest values (state_count.nextval, 'OH', 4.53, 3.817, 3.344, 2.463, 2.766, 3.375);
+insert into interest values (state_count.nextval, 'OK', 4.72, 3.893, 3.432, 2.502, 2.863, 3.523);
+insert into interest values (state_count.nextval, 'OR', 4.54, 3.643, 3.34, 2.41, 2.954, 3.18);
+insert into interest values (state_count.nextval, 'PA', 4.59, 3.8, 3.278, 2.376, 2.939, 3.29);
+insert into interest values (state_count.nextval, 'RI', 4.41, 3.722, 3.203, 2.44, 2.675, 3.348);
+insert into interest values (state_count.nextval, 'SC', 4.48, 3.769, 3.201, 2.479, 2.842, 3.268);
+insert into interest values (state_count.nextval, 'SD', 4.41, 3.57, 3.263, 2.312, 2.665, 3.285);
+insert into interest values (state_count.nextval, 'TN', 4.5, 3.632, 3.159, 2.413, 2.964, 3.195);
+insert into interest values (state_count.nextval, 'TX', 4.52, 3.713, 3.18, 2.376, 2.914, 3.435);
+insert into interest values (state_count.nextval, 'UT', 4.55, 3.791, 3.355, 2.377, 2.841, 3.458);
+insert into interest values (state_count.nextval, 'VT', 4.57, 3.799, 3.244, 2.291, 2.939, 3.455);
+insert into interest values (state_count.nextval, 'VA', 4.52, 3.644, 3.283, 2.398, 2.975, 3.453);
+insert into interest values (state_count.nextval, 'WA', 4.44, 3.679, 3.153, 2.467, 2.744, 3.176);
+insert into interest values (state_count.nextval, 'WV', 4.72, 3.883, 3.389, 2.36, 3.117, 3.305);
+insert into interest values (state_count.nextval, 'WI', 4.57, 3.683, 3.286, 2.36, 2.806, 3.461);
+insert into interest values (state_count.nextval, 'WY', 4.63, 3.814, 3.306, 2.538, 2.871, 3.277);
 
