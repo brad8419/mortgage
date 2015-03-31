@@ -1,3 +1,0 @@
-# mortgage
-mortgage calculator
-dsf
