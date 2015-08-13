@@ -1,14 +1,22 @@
+create sequence user_count;
+create sequence user_role_count;
+
 create table users
-(person_id number(10) primary key,
+(user_id number(10) primary key,
 username varchar2(20) not null,
 password varchar2(50) not null,
-email varchar2(30) not null,
-authority varchar2(20) not null);
+email varchar2(50) not null,
+enabled number(1) not null);
 
-create sequence person_count;
+create table user_roles
+(
+user_id number(10) not null primary key,
+authority varchar2(20) not null,
+constraint user_id_fk foreign key (user_id) references users(user_id));
 
-insert into users values (person_count.nextval, 'admin', 'admin', 'stevenwumo@gmail.com', 'ROLE_ADMIN');
-insert into users values (person_count.nextval, 'dat', '123', 'dat.mq.le@gmail.com', 'ROLE_USER');
+insert into users values (user_count.nextval, 'dat', '123', 'dat.mq.le@gmail.com', 1);
+insert into user_roles values (user_count.currval, 'ROLE_USER');
+
 
 create table interest
 (state_id number(2) primary key,
